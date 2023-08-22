@@ -36,12 +36,9 @@ class TextViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
 
-//        view.addSubview(photoImageView)
-//        view.addSubview(titleTextField)
-        
-        for item in [photoImageView,titleTextField] {
-            view.addSubview(item)
-        }
+//        for item in [photoImageView,titleTextField] {
+//            view.addSubview(item)
+//        }
         
         [photoImageView,titleTextField].forEach {
             view.addSubview($0)
