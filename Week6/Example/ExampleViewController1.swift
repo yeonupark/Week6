@@ -79,7 +79,7 @@ class ExampleViewController1: UIViewController {
         imageView.snp.makeConstraints { make in
             make.top.equalTo(view)
             make.horizontalEdges.equalTo(view.safeAreaLayoutGuide).inset(20)
-            make.bottomMargin.equalTo(titleTextField.snp.top).inset(-20)
+            make.bottom.equalTo(titleTextField.snp.top).inset(-20)
         }
     }
 }
