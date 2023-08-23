@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4814385E2A94F9B700AE3342 /* ExampleViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4814385D2A94F9B700AE3342 /* ExampleViewController1.swift */; };
+		481438602A9611CC00AE3342 /* ExampleViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4814385F2A9611CC00AE3342 /* ExampleViewController2.swift */; };
 		481D521B2A930A6000DA73AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D521A2A930A6000DA73AC /* AppDelegate.swift */; };
 		481D521D2A930A6000DA73AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D521C2A930A6000DA73AC /* SceneDelegate.swift */; };
 		481D521F2A930A6000DA73AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D521E2A930A6000DA73AC /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		4814385D2A94F9B700AE3342 /* ExampleViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController1.swift; sourceTree = "<group>"; };
+		4814385F2A9611CC00AE3342 /* ExampleViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController2.swift; sourceTree = "<group>"; };
 		481D52172A930A6000DA73AC /* Week6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		481D521A2A930A6000DA73AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		481D521C2A930A6000DA73AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				4814385D2A94F9B700AE3342 /* ExampleViewController1.swift */,
+				4814385F2A9611CC00AE3342 /* ExampleViewController2.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				481D52332A94467400DA73AC /* SnapViewController.swift in Sources */,
 				4814385E2A94F9B700AE3342 /* ExampleViewController1.swift in Sources */,
 				481D521F2A930A6000DA73AC /* ViewController.swift in Sources */,
+				481438602A9611CC00AE3342 /* ExampleViewController2.swift in Sources */,
 				486522DD2A947929003D205E /* LocationViewController.swift in Sources */,
 				481D521B2A930A6000DA73AC /* AppDelegate.swift in Sources */,
 				481D521D2A930A6000DA73AC /* SceneDelegate.swift in Sources */,

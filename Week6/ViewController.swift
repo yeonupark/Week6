@@ -62,7 +62,7 @@ class ViewController: UIViewController {
     func signButtonClicked() {
         
         // 스토리보드 없는 뷰로 화면전환
-        let vc = LocationViewController()
+        let vc = ExampleViewController2()
         let nav = UINavigationController(rootViewController: vc)
         
         present(nav,animated: true)
