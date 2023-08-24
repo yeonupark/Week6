@@ -61,11 +61,13 @@ class ViewController: UIViewController {
     @objc
     func signButtonClicked() {
         
-        // 스토리보드 없는 뷰로 화면전환
-        let vc = ExampleViewController2()
-        let nav = UINavigationController(rootViewController: vc)
+        transition(viewController: GenericViewController.self, storyboard: "Main", style: .push)
         
-        present(nav,animated: true)
+        // 스토리보드 없는 뷰로 화면전환
+//        let vc = GenericViewController()
+//        let nav = UINavigationController(rootViewController: vc)
+//
+//        present(nav,animated: true)
     }
     
     func setLayoutAnchor() {

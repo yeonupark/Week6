@@ -9,6 +9,9 @@ import UIKit
 import SnapKit
 
 class TextViewController: UIViewController {
+    
+    // 1. ImagePickerController 등록
+    let picker = UIImagePickerController()
 
     let photoImageView = {
         
@@ -35,10 +38,6 @@ class TextViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-
-//        for item in [photoImageView,titleTextField] {
-//            view.addSubview(item)
-//        }
         
         [photoImageView,titleTextField].forEach {
             view.addSubview($0)
@@ -46,6 +45,22 @@ class TextViewController: UIViewController {
         
         setupConstraints()
         
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        // 2. available한지 체크
+        guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
+            print("갤러리 사용 불가, 사용자에게 토스트/얼럿")
+            return
+        }
+        picker.delegate = self
+        picker.sourceType = .camera  //.photoLibrary
+        picker.allowsEditing = true
+        
+        //let picker = UIColorPickerViewController()
+        
+        present(picker, animated: true)
     }
     
     func setupConstraints() {
@@ -64,4 +79,22 @@ class TextViewController: UIViewController {
         }
     }
 
+}
+
+// 3. 프로토콜 선언
+extension TextViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    // 취소 버튼 클릭 시
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        print(#function)
+    }
+    
+    // 사진을 선택하거나 카메라 촬영 직후 호출 **
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            self.photoImageView.image = image
+            dismiss(animated: true)
+        }
+    }
 }

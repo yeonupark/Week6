@@ -76,6 +76,8 @@ class LocationViewController: UIViewController {
         } else if type == 1 {
             
             mapView.removeAnnotations(mapView.annotations)
+            //mapView.removeAnnotation(annotation1) -> 동작 안됨
+            
             mapView.addAnnotations([annotation2])
         }
     }
