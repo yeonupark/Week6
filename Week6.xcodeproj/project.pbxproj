@@ -25,6 +25,8 @@
 		487D38E22A972A28007BBCA9 /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487D38E12A972A28007BBCA9 /* CustomTableViewController.swift */; };
 		487D38E42A9734D1007BBCA9 /* SignUpTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487D38E32A9734D1007BBCA9 /* SignUpTextField.swift */; };
 		487D38E62A973751007BBCA9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487D38E52A973751007BBCA9 /* SignUpViewController.swift */; };
+		487D38E82A977C26007BBCA9 /* ExampleViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487D38E72A977C26007BBCA9 /* ExampleViewController3.swift */; };
+		487D38EA2A977CA5007BBCA9 /* ChatLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487D38E92A977CA5007BBCA9 /* ChatLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		487D38E12A972A28007BBCA9 /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
 		487D38E32A9734D1007BBCA9 /* SignUpTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTextField.swift; sourceTree = "<group>"; };
 		487D38E52A973751007BBCA9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		487D38E72A977C26007BBCA9 /* ExampleViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController3.swift; sourceTree = "<group>"; };
+		487D38E92A977CA5007BBCA9 /* ChatLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 				4814385F2A9611CC00AE3342 /* ExampleViewController2.swift */,
 				487D38E32A9734D1007BBCA9 /* SignUpTextField.swift */,
 				487D38E52A973751007BBCA9 /* SignUpViewController.swift */,
+				487D38E72A977C26007BBCA9 /* ExampleViewController3.swift */,
+				487D38E92A977CA5007BBCA9 /* ChatLabel.swift */,
 			);
 			path = Assignments;
 			sourceTree = "<group>";
@@ -215,6 +221,7 @@
 				487D38DB2A96F108007BBCA9 /* Extension+UIViewController.swift in Sources */,
 				487D38E02A971E91007BBCA9 /* BlackRadiusTextField.swift in Sources */,
 				481D52332A94467400DA73AC /* SnapViewController.swift in Sources */,
+				487D38E82A977C26007BBCA9 /* ExampleViewController3.swift in Sources */,
 				487D38E42A9734D1007BBCA9 /* SignUpTextField.swift in Sources */,
 				487D38E22A972A28007BBCA9 /* CustomTableViewController.swift in Sources */,
 				4814385E2A94F9B700AE3342 /* ExampleViewController1.swift in Sources */,
@@ -225,6 +232,7 @@
 				486522DD2A947929003D205E /* LocationViewController.swift in Sources */,
 				481D521B2A930A6000DA73AC /* AppDelegate.swift in Sources */,
 				481D521D2A930A6000DA73AC /* SceneDelegate.swift in Sources */,
+				487D38EA2A977CA5007BBCA9 /* ChatLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
