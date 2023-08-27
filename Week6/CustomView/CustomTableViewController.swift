@@ -15,9 +15,21 @@ struct Sample {
 
 class CustomTableViewController: UIViewController {
 
-    let tableView = {
+    // viewDidLoad보다 클로저 구문이 먼저 실행됨
+    // CustomTableViewController 인스턴스 생성 직전에 클로저 구문이 우선 실행
+    lazy var tableView = { // '인스턴스가 생성된 직후에 나중에 초기화를 해줄게'
         let view = UITableView()
         view.rowHeight = UITableView.automaticDimension // 1. automatic dimension
+        
+        view.delegate = self // 자기 자신의 인스턴스를 의미함
+        view.dataSource = self
+        view.register(CustomTableViewCell.self, forCellReuseIdentifier: "customCell")
+        
+        return view
+    }()
+    
+    let imageView = {
+        let view = PosterImageView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
         return view
     }()
     
@@ -32,13 +44,13 @@ class CustomTableViewController: UIViewController {
         tableView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
+        view.addSubview(imageView)
+        imageView.snp.makeConstraints { make in
+            print("constraints")
+            make.size.equalTo(200)
+            make.center.equalTo(view)
+        }
         
-        tableView.delegate = self
-        tableView.dataSource = self
-        
-        // uinib - xib (storyboard) 안씀
-        // 시스템셀
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "customCell")
     }
 }
 
@@ -51,10 +63,10 @@ extension CustomTableViewController: UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         print(#function) // 열몇개 프린트됨
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "customCell")!
-        cell.textLabel?.text = list[indexPath.row].text
+        let cell = tableView.dequeueReusableCell(withIdentifier: "customCell") as! CustomTableViewCell
+        cell.label.text = list[indexPath.row].text
         var isExpand = list[indexPath.row].isExpand
-        cell.textLabel?.numberOfLines = isExpand ? 0 : 1
+        cell.label.numberOfLines = isExpand ? 0 : 1
         
         return cell
     }

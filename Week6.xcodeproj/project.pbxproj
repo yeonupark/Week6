@@ -27,6 +27,9 @@
 		487D38E62A973751007BBCA9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487D38E52A973751007BBCA9 /* SignUpViewController.swift */; };
 		487D38E82A977C26007BBCA9 /* ExampleViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487D38E72A977C26007BBCA9 /* ExampleViewController3.swift */; };
 		487D38EA2A977CA5007BBCA9 /* ChatLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487D38E92A977CA5007BBCA9 /* ChatLabel.swift */; };
+		487D38EC2A982ADC007BBCA9 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487D38EB2A982ADC007BBCA9 /* CustomTableViewCell.swift */; };
+		487D38EE2A9840AD007BBCA9 /* PosterImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487D38ED2A9840AD007BBCA9 /* PosterImageView.swift */; };
+		487D38F12A984B56007BBCA9 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487D38F02A984B56007BBCA9 /* OnboardingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +54,9 @@
 		487D38E52A973751007BBCA9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		487D38E72A977C26007BBCA9 /* ExampleViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController3.swift; sourceTree = "<group>"; };
 		487D38E92A977CA5007BBCA9 /* ChatLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLabel.swift; sourceTree = "<group>"; };
+		487D38EB2A982ADC007BBCA9 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		487D38ED2A9840AD007BBCA9 /* PosterImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterImageView.swift; sourceTree = "<group>"; };
+		487D38F02A984B56007BBCA9 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 		481D52192A930A6000DA73AC /* Week6 */ = {
 			isa = PBXGroup;
 			children = (
+				487D38EF2A984B0F007BBCA9 /* Onboarding */,
 				487D38DC2A971CB6007BBCA9 /* CustomView */,
 				487D38D72A96DDB3007BBCA9 /* Generic */,
 				4814385C2A94F99A00AE3342 /* Assignments */,
@@ -136,8 +143,18 @@
 				487D38DD2A971CE4007BBCA9 /* CustomViewController.swift */,
 				487D38DF2A971E91007BBCA9 /* BlackRadiusTextField.swift */,
 				487D38E12A972A28007BBCA9 /* CustomTableViewController.swift */,
+				487D38EB2A982ADC007BBCA9 /* CustomTableViewCell.swift */,
+				487D38ED2A9840AD007BBCA9 /* PosterImageView.swift */,
 			);
 			path = CustomView;
+			sourceTree = "<group>";
+		};
+		487D38EF2A984B0F007BBCA9 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				487D38F02A984B56007BBCA9 /* OnboardingViewController.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,11 +233,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				487D38EC2A982ADC007BBCA9 /* CustomTableViewCell.swift in Sources */,
 				487D38D92A96F0EA007BBCA9 /* GenericViewController.swift in Sources */,
+				487D38EE2A9840AD007BBCA9 /* PosterImageView.swift in Sources */,
 				481D52352A945CBF00DA73AC /* TextViewController.swift in Sources */,
 				487D38DB2A96F108007BBCA9 /* Extension+UIViewController.swift in Sources */,
 				487D38E02A971E91007BBCA9 /* BlackRadiusTextField.swift in Sources */,
 				481D52332A94467400DA73AC /* SnapViewController.swift in Sources */,
+				487D38F12A984B56007BBCA9 /* OnboardingViewController.swift in Sources */,
 				487D38E82A977C26007BBCA9 /* ExampleViewController3.swift in Sources */,
 				487D38E42A9734D1007BBCA9 /* SignUpTextField.swift in Sources */,
 				487D38E22A972A28007BBCA9 /* CustomTableViewController.swift in Sources */,
